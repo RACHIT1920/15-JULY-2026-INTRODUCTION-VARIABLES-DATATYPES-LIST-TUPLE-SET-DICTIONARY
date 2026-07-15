@@ -1,0 +1,138 @@
+introduction
+->High level interpreted lanaguage
+->Execute line by line
+->slower execution
+->easier debugging
+->.py extension
+
+
+Print function
+->print function is used to display output in console
+->in print statement if we print multiple variables in single line,then by default it will use space but if we want to explicitly use something else then in we can use sep='something' to separate variables
+
+
+Variables
+->Variables are something that stores value in memory
+->Variables names are case sensitive
+->Variable name should start with letter or underscore
+->Datatype-float,int,string,boolean,etc
+->to check datatype of variable,use type()
+->end = what to print after everything has been printed.
+
+Input function
+->We can receive the input in python using inbuilt input() function
+->Input always return input as string no matter whether user entered int,etc
+
+Typecasting
+->Typecasting means converting one datatype to another
+
+Operators
+>operators
+A. Arithmetic Operators->+,-,*,/,//,**
+B. Comparison operators->==,!=,>,<,>=,<= it always return in boolean
+C. Logical Operators->and,or,not used to combine multiple conditions
+
+
+Strings
+->to calculate length,use len function
+->to acceess any character,use stringname[index]
+->0 based indexing
+->in length,it calculates space also
+->slicing->stringname[startingindex:endingindex] IN THIS ENDING INDEX IS NOT INCLUDED
+->methods in Strings
+A. find()
+B. replace()
+C. lower()
+D. upper()
+E. split()
+->Strings are immutable means address can't be changed
+
+
+fstrings and docstrings
+->fstring(formatted string literal) allows to emebed variables and expression directly in string using {}. 
+->docstring is used to desscribe what module,function does
+->docstring only in function,class,module
+->to access docstring,functioname.__doc__
+
+
+Data Structures
+A. List
+->It is an ordered,mutable collection of items. It can hold multiple values including different data types
+->methods:pop,append,extend,copy,remove,count,index,etc
+# =========================
+# PYTHON LIST METHODS
+# =========================
+
+# 1. append(x)
+# Adds an element at the end of the list.
+lst.append(x)
+
+# 2. extend(iterable)
+# Adds all elements of another iterable to the list.
+lst.extend(iterable)
+
+# 3. insert(index, element)
+# Inserts an element at the specified index.
+lst.insert(index, element)
+
+# 4. remove(element)
+# Removes the first occurrence of the specified element.
+lst.remove(element)
+
+# 5. pop(index=-1)
+# Removes and returns the element at the given index.
+# Default removes the last element.
+lst.pop()
+lst.pop(index)
+
+# 6. clear()
+# Removes all elements from the list.
+lst.clear()
+
+# 7. index(element, start=0, end=len(list))
+# Returns the index of the first occurrence of the element.
+lst.index(element)
+lst.index(element, start, end)
+
+# 8. count(element)
+# Returns the number of occurrences of an element.
+lst.count(element)
+
+# 9. sort()
+# Sorts the list in ascending order.
+lst.sort()
+
+# Sort in descending order.
+lst.sort(reverse=True)
+
+# Sort using a custom key.
+lst.sort(key=len)
+
+# 10. reverse()
+# Reverses the list in place.
+lst.reverse()
+
+# 11. copy()
+# Returns a shallow copy of the list.
+new_list = lst.copy()
+
+B. Tuple
+->immutable
+->ordered
+->() created using this
+->faster than list 
+
+
+C. Dictionary
+->unordered mutable collection of key value pairs
+->syntax:{}
+->keys must be immutable
+->Duplicate values are not allowed
+->get method to search for key
+->we can access,modify key value pair
+->we can make nested dictionaries also
+
+D. Set
+->unordered,unindexed  collection of unique elements
+->mutable
+->to perform mathematical operations like union,intersection
