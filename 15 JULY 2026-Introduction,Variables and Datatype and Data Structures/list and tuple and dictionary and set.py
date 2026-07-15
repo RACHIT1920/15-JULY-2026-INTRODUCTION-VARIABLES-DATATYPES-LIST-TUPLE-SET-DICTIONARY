@@ -65,7 +65,25 @@ s=set()
 
 
 a={1,1,1,2,3,4}
+b={8,9,10}
 
 print(a)
+
+a.add(7)
+a.remove(2)
+a.discard(2)
+
+# common set operations
+
+# union operation
+print(a|b)
+# intrsection operation
+print(a&b)
+
+# difference operation
+print(a-b)
+
+# symmetric operation
+print(a^b)
 
 
